@@ -132,7 +132,7 @@ body {
 }
 
 .menu-wrap .menu > div {
-  background:url("Images/checkedBackground.jpg");
+  background:url("../Images/checkedBackground.jpg");
   opacity: 70%;
   border-radius: 50%;
   width: 200vw;
