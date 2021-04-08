@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css" >
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -39,14 +40,17 @@
       </video>
     
       <section>
-        <img class="logoClass" src="images/logo.jpg" alt="">
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="logoClass" src="images/logo.jpg" alt="">
         <!-- <h1 class="extraText">Traditional Indian taste</h1> -->
       </section>
     </div>
 
     <div class="information">
       <ul class="links">
-        <li><a href="http://facebook.com/" target="_blank"></a><img src="Images/001-facebook.svg" alt="" height="30px" ></li>
+        <!-- facebook button doesnt work. they rest do. werid -_- -->
+        <li><a href="http://facebook.com/" target="_blank"><img src="Images/001-facebook.svg" alt="" height="30px" ></a></li>
         <li><a href="http://instagram.com/" target="_blank"><img src="Images/002-instagram.svg" alt="" height="30px" ></a></li>
         <li><a href="http://twitter.com/" target="_blank"><img src="Images/003-twitter.svg" alt="" height="30px" ></a></li>
       </ul>
@@ -56,7 +60,7 @@
     <main class="mainContent">
       <div class = "content-item" >
         <div class="image-1 writing-1">
-          <div class="blurredTextImage">
+          <div data-aos="fade-up" class="blurredTextImage ">
             <h1>Lorem, ipsum.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos iste animi hic, culpa porro
               cumque, quibusdam eaque voluptates consequatur mollitia cum nam officiis quisquam labore rerum assumenda
@@ -107,7 +111,7 @@
                     <tr>
                       <td> I - Snacks </td>
                     </tr>
-                    <tr><td> Item 1 ...................... price  Item 1 ...................... price</td></tr>
+                    <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
                     <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
                     <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
                     <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
@@ -120,7 +124,7 @@
                     <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
                     <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
                     <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
-                    <tr> <td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
+                    <tr><td>Item 1 ...................... price  Item 1 ...................... price</td></tr>
                   <tbody>
                 </table>
               </div>
@@ -160,7 +164,8 @@
 
 </div>
 </body>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script>
+  AOS.init();
 </script>
-
 </html>
