@@ -5,7 +5,6 @@
   --menu-speed: 0.75s;
 }
 
-
 /* before you start add this */
 html {
   box-sizing: border-box;
@@ -233,7 +232,6 @@ body {
 }
 
 /* main body */
-
 .mainContent {
   display: flex;
   margin: 0;
@@ -371,13 +369,15 @@ body {
   height: 100vh;
   z-index: 1;
   position: absolute;
+  visibility: visible;
   left: 0; top: 0; right: 0; bottom: 0;
 }
 
 .restMenu:hover .menuItemOverlay{
   opacity: 0%;
+  /* display: none; */
+  /* background-color:rgba(0,0,0,.9); */
 }
-
 
 .menuItem {
   background:url("../Images/menu-bg.jpeg") no-repeat fixed center;
@@ -419,7 +419,6 @@ body {
   position: absolute;
   z-index:99;
 }
-
 
 .menu-item-card__container .row .menu-item-card{
   /* border:1px solid green; */
@@ -468,7 +467,7 @@ body {
   flex: 0 1 50%;
   margin-left: 0px ;
   border-left: solid black 1px;
-  height: calc(100vh - 40px);;
+  height: calc(100vh - 40px);
 
   background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(5px);
@@ -483,8 +482,6 @@ body {
   color: black;
   font-family: 'Cedarville Cursive', cursive;
 }
-
-
 
 .footer {
   border: 5px solid rgb(27, 22, 22);
