@@ -102,11 +102,11 @@
 
     <div class="restMenu">
       <!-- todo: figure out why menu items dont animate now. They dont because above layer is still there, but still! figure it out sis. -->
-      <div class="menuItemOverlay">
+      <div onmouseover="off()" onmouseout="on()" class="menuItemOverlay">
 
       </div>
       <div class="menuItem">
-        <div class="menu-item-child overlay">
+        <div class="menu-item-child">
             <div class="pages page-1">
               <div class="page-content">
                 <h1>Main</h1>
@@ -356,7 +356,16 @@ function initMap() {
   });
 }
 
-var overlay = document.
+function on() {
+  var x = document.querySelector(".menuItemOverlay")
+  x.style.display = "block";
+}
+
+function off() {
+  document.querySelector(".menuItemOverlay").style.display = "none";
+}
+
+
 </script>
 <script>
   AOS.init();
