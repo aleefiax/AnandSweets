@@ -377,6 +377,11 @@ body {
   bottom: 0;
 }
 
+/* .menuItemOverlay:hover {
+  display: none;
+  transition: 2s;
+} */
+
 .menuItem {
   background: url("../Images/menu-bg.jpeg") no-repeat fixed center;
   background-size: cover;

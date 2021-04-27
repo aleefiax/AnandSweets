@@ -100,9 +100,12 @@
         </div>
     </div>
 
+    <!-- <img src="../Images/menu-bg.jpeg"> -->
+
     <div class="restMenu">
-      <!-- todo: figure out why menu items dont animate now. They dont because above layer is still there, but still! figure it out sis. -->
-      <div onmouseover="off()" onmouseout="on()" class="menuItemOverlay">
+      <!-- TODO: figure out why menu items dont animate now. They dont because above layer is still there, but still! figure it out sis. -->
+      <div  class="menuItemOverlay" onmouseover="off()" onmouseout="on()" >
+        
 
       </div>
       <div class="menuItem">
@@ -362,7 +365,8 @@ function on() {
 }
 
 function off() {
-  document.querySelector(".menuItemOverlay").style.display = "none";
+  var y = document.querySelector(".menuItemOverlay")
+  y.style.display = "none";
 }
 
 
