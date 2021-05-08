@@ -1,69 +1,70 @@
 :root {
-  --primary-color: rgba(127, 255, 212,0.20);
-  --primary-color-nav: rgba(127, 255, 212,0.10);
+  --primary-color: rgba(127, 255, 212, 0.2);
+  --primary-color-nav: rgba(127, 255, 212, 0.1);
   --overlay-color: rgba(24, 39, 51, 0.85);
   --menu-speed: 0.75s;
 }
-
 
 /* before you start add this */
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   padding: 0px;
-  line-height: 1.4; 
+  line-height: 1.4;
   /* border: 5px solid black; */
   margin: 0px;
   /* background-color: rgba(127, 255, 212,0.20); */
 }
 
 /* menu css */
-.menu-wrap{
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:2;
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .menu-wrap .toggler {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
   cursor: pointer;
-  width:50px;
-  height:50px;
-  opacity:0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
 }
 
 .menu-wrap .hamburger {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:2;
-  width:60px;
-  height:45px;
-  padding:1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 60px;
+  height: 45px;
+  padding: 1rem;
   background: var(--primary-color-nav);
   opacity: 90%;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   /* background-blend-mode: lighten; */
 }
 
 /* hamburger line */
 .menu-wrap .hamburger > div {
-  position:relative;
+  position: relative;
   width: 100%;
-  height:3px;
+  height: 3px;
   background-color: black;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
@@ -72,13 +73,13 @@ body {
 /* top and bottom line */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   top: -10px;
-  width:100%;
-  height:3px;
-  background:inherit;
+  width: 100%;
+  height: 3px;
+  background: inherit;
 }
 
 /* moved the line down */
@@ -94,7 +95,7 @@ body {
 /* turn lines into X */
 .menu-wrap .toggler:checked + .hamburger > div::before,
 .menu-wrap .toggler:checked + .hamburger > div::after {
-  top:0;
+  top: 0;
   transform: rotate(90deg);
 }
 
@@ -119,9 +120,9 @@ body {
 }
 
 .menu-wrap .menu {
-  position: fixed; 
+  position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
   visibility: hidden;
@@ -132,13 +133,13 @@ body {
 }
 
 .menu-wrap .menu > div {
-  background:url("../Images/checkedBackground.jpg");
+  background: url("../Images/checkedBackground.jpg");
   opacity: 70%;
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
-  display:flex;
-  flex:none;
+  display: flex;
+  flex: none;
   align-items: center;
   justify-content: center;
   transform: scale(0);
@@ -157,12 +158,12 @@ body {
   list-style: none;
   color: black;
   font-weight: bold;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: "Cedarville Cursive", cursive;
   font-size: 60px;
   padding: 1rem;
 }
 
-.menu-wrap .menu > div > div > ul > li > a{
+.menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4 ease;
