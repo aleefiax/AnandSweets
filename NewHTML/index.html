@@ -329,6 +329,10 @@
       </div>
     </div>
 
+    <div class="aleefia">
+
+    </div>
+
     <footer class = "footer" >
       HAHAHAA sucker
      </footer>
@@ -357,13 +361,38 @@ function initMap() {
   });
 }
 
-document.querySelectorAll('.restMenu > .menuItemOverlay .menu-item-child')[0].addEventListener('mouseenter', (e) => {
+console.dir(document.querySelector('.restMenu > .menuItemOverlay .menu-item-child'))
+document.querySelector('.restMenu > .menuItemOverlay .menu-item-child').addEventListener('mouseenter', (e) => {
+  console.log(e)
   e.target.style.opacity = '1'; 
 }); 
 
-document.querySelectorAll('.restMenu > .menuItemOverlay .menu-item-child')[0].addEventListener('mouseleave', (e) => { 
+document.querySelector('.restMenu > .menuItemOverlay .menu-item-child').addEventListener('mouseleave', (e) => { 
   e.target.style.opacity = '0'; 
 }); 
+
+// mouse follow effect!
+// document.getElementsByTagName("body")[0].addEventListener('mouseover', function(e){
+//   console.log(e.clientX , e.clientY)
+
+//   document.querySelector(".aleefia").style.top = (e.clientX) + "px";
+//   document.querySelector(".aleefia").style.left = (e.clientY) + "px";
+// })
+
+setInterval(function(){
+  document.querySelector(".aleefia").style.top = (Math.random()*1000) + "px";
+  document.querySelector(".aleefia").style.left = (Math.random()*1000) + "px";
+},1000)
+
+
+
+// function movingCircles () {
+//   document.querySelector(".aleefia").style.top = (Math.random()*1000) + "px";
+//   document.querySelector(".aleefia").style.left = (Math.random()*1000) + "px";
+//   requestAnimationFrame(movingCircles)
+// }
+
+// requestAnimationFrame(movingCircles)
 
 
 </script>

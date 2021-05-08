@@ -382,6 +382,17 @@ body {
   transition: 2s;
 } */
 
+.aleefia {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: top 0.3s ease-out, left 0.3s ease-out;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  border: 5px solid red;
+}
+
 .menuItem {
   background: url("../Images/menu-bg.jpeg") no-repeat fixed center;
   background-size: cover;
