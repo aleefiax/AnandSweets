@@ -24,9 +24,9 @@
       <div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="reachUs.html">How to reach us</a></li>
+          <li><a href="index.html#Menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#events">How to reach us</a></li>
           <li><a href="staff.html">Staff</a></li>
         </ul>
       </div>
@@ -97,14 +97,14 @@
         <div class="inner-main2-child main2-image1">
           <div id="map"></div>
         </div>
-        <div class="inner-main2-child main2-image2">
+        <div id="events" class="inner-main2-child main2-image2">
           <h1>How to reach us!</h1>
         </div>
     </div>
 
     <!-- <img src="../Images/menu-bg.jpeg"> -->
 
-    <div class="restMenu">
+    <div id="Menu" class="restMenu">
       <!-- TODO: figure out why menu items dont animate now. They dont because above layer is still there, but still! figure it out sis. -->
       <div  class="menuItemOverlay">
         <div class="menuItem">
@@ -329,11 +329,24 @@
           </div>
         </div>
       </div>
+      
     </div>
+
+    <!-- second page -->
+
+    <!-- staff -->
+    <div>
+      This is a list of our staff 
+    </div>
+
+   
+  
 
     <footer class = "footer" >
       HAHAHAA sucker
      </footer>
+
+
 </div>
 
 </body>
@@ -364,6 +377,14 @@ document.querySelectorAll('.restMenu > .menuItemOverlay .menu-item-child')[0].ad
 }); 
 
 document.querySelectorAll('.restMenu > .menuItemOverlay .menu-item-child')[0].addEventListener('mouseleave', (e) => { 
+  e.target.style.opacity = '0'; 
+}); 
+
+document.querySelectorAll('.restMenu2 > .menuItemOverlay2 .menu-item-child2')[0].addEventListener('mouseenter', (e) => {
+  e.target.style.opacity = '1'; 
+}); 
+
+document.querySelectorAll('.restMenu2 > .menuItemOverlay2 .menu-item-child2')[0].addEventListener('mouseleave', (e) => { 
   e.target.style.opacity = '0'; 
 }); 
 

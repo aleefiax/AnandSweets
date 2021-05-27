@@ -411,10 +411,6 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.menu-item-card__container {
-  /* border:1px solid red; */
-}
-
 .menu-item-card__container .row {
   display: flex;
 }
